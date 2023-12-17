@@ -1,0 +1,33 @@
+:root{
+    --Purple-main: #7D0BC3;
+    --Black-main: #403D44;
+    --Color-background: #E5E2E8;
+}
+*{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+p, h1{
+    color: var(--Black-main);
+}
+.h1_services{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.contentServices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.under_development{
+
+    height:1000px
+
+}
+

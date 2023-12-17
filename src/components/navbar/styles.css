@@ -1,0 +1,39 @@
+:root{
+    --Purple-main: #7D0BC3;
+    --Black-main: #403D44;
+    --Color-background: #E5E2E8;
+  }
+
+a{
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    color:var(--Black-main) ;
+    font-size: 1.15rem;
+}
+
+.nav{
+    cursor: pointer;
+    text-align: center;
+    margin: 25px;
+}
+
+
+.nav_menu  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav_item{
+    margin: 0 10px;
+
+}
+
+.nav_item a:hover{
+    color:var(--Purple-main);
+}
+
+.nav_item.active a{
+    color:var(--Purple-main);
+}

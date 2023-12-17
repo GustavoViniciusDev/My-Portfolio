@@ -1,0 +1,33 @@
+:root{
+    --Purple-main: #7D0BC3;
+    --Black-main: #403D44;
+    --Color-background: #E5E2E8;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.content{
+    margin-right: 350px;
+    color: var(--Black-main);
+}
+
+img{
+   max-width: 600px;
+   height: auto; 
+}
+
+h1, h2{
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 50px;
+    
+}
+
+.Hello{
+    color: var(--Purple-main);
+}

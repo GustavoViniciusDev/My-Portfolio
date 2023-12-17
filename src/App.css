@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+
+:root{
+  --Purple-main: #7D0BC3;
+  --Black-main: #403D44;
+  --Color-background: #E5E2E8;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--Color-background);
+}

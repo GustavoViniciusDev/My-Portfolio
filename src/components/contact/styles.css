@@ -1,0 +1,42 @@
+:root{
+    --Purple-main: #7D0BC3;
+    --Black-main: #403D44;
+    --Color-background: #E5E2E8;
+}
+*{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+p, h1{
+    color: var(--Black-main);
+}
+
+
+
+.containerContact{
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.icon_contacts{
+    display: flex;
+    gap: 25px
+    
+   
+}
+
+.icon_contacts img{
+    max-width: 120px;
+    
+}
+
+
+.content_contacts{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+}
