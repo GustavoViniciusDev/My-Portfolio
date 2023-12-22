@@ -1,30 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import ScrollTrigger from "react-scroll-trigger";
 
-import './style.css';
+import "./style.css";
 
-export default function Services(){
-    return(
-        <div>
+export default function Services() {
+  const [isVisible, setIsVisible] = useState(false);
 
-            <div className="h1_services">
-                <h1 className='myservices'>My <span> Services</span></h1>
-            </div>
+  const handleScroll = () => {
+    if (window.scrollY > 1000) {
+      setIsVisible(true);
+    }else{
+        setIsVisible(false);
+    }
+  };
 
-            <div className='containerServices'>
-
-                <div className='contentServices'>
-                    <p>Here are some <span>projects</span> I want to show you</p>
-                    
-                </div>
-
-                <div className="under_development">
-                    
-                </div>
-                
-
-                </div>
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  return (
+    <ScrollTrigger onEnter={() => console.log("Home component is visible!")}>
+      <div className={`home-container ${isVisible ? "visible" : ""}`}>
+        <div className="h1_services">
+          <h1 className="myservices">
+            My <span> Services</span>
+          </h1>
         </div>
 
-            
-    );
+        <div className="containerServices">
+          <div className="contentServices">
+            <p>
+              Here are some <span>projects</span> I want to show you
+            </p>
+          </div>
+
+          <div className="under_development"></div>
+        </div>
+      </div>
+    </ScrollTrigger>
+  );
 }

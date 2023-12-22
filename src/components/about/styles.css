@@ -50,6 +50,11 @@ p, h1{
 .icon_skills img{
     max-width: 55px;
     margin: 0 10px;
+    transition: transform .2s;
+}
+
+.icon_skills img:hover{
+   transform: scale(1.5);   
 }
 
 .skills{
@@ -75,3 +80,16 @@ span{
 }
 
 
+
+.about-container {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+  .about-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  

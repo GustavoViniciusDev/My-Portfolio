@@ -1,4 +1,5 @@
 import './App.css';
+// import ScrollTrigger  from 'react-scroll-trigger';
 import { Element } from 'react-scroll';
 import About from './components/about';
 import Home from './components/home';
@@ -10,6 +11,8 @@ import ScrollToTopArrow from './components/scrolltoparrow';
 
 
 function App() {
+
+ 
   return (
     <div>
       <Navbar />

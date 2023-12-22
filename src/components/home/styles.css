@@ -4,30 +4,30 @@
     --Color-background: #E5E2E8;
 }
 
-
-.container{
-    display: flex;
-    align-items: center;
+.container_home{
+    margin-top: 200px ;
     justify-content: center;
-    margin-top: 60px;
-}
-
-.content{
-    margin-right: 350px;
-    color: var(--Black-main);
-}
-
-img{
-   max-width: 600px;
-   height: auto; 
-}
-
-h1, h2{
-    font-family: 'JetBrains Mono', monospace;
-    line-height: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.Hello{
+.content_home{
+    color: var(--Black-main);
+}
+
+.content_home h2{
     color: var(--Purple-main);
 }
+
+.home-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+  
+  .home-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
