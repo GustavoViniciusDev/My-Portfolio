@@ -39,3 +39,10 @@ a{
 .nav_item.active a{
     color:var(--Purple-main);
 }
+
+@media only screen and (max-width: 769px){
+    a{
+        font-size: 0.8rem;
+    }
+
+  } 

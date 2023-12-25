@@ -93,3 +93,49 @@ span{
   }
 
   
+
+  @media only screen and (max-width: 1200px){
+    .containerAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 769px;
+        margin: 0 auto;
+        padding: 20px;
+        justify-content: center;
+    }
+    
+    .content_aboutme {
+        order: 2;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .skills {
+        order: 1;
+        text-align: justify;
+        
+    }
+    
+    .p_about {
+        margin-bottom: 200px;
+    }
+    
+    .mepick {
+        max-width: 200px;
+        order: 3;
+        margin-bottom: 20px;
+    }
+    
+    .mainskills {
+        order: 4;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .icon_skills {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+  }

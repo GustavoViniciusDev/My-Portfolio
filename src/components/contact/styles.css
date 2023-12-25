@@ -55,3 +55,22 @@ p, h1{
     opacity: 1;
     transform: translateY(0);
   }
+
+  @media only screen and (max-width: 1200px){
+    .containerContact{
+        margin-top: 190px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    .icon_contacts{
+        display: flex;
+        gap: 25px
+    }
+
+    .icon_contacts img{
+        max-width: 90px;
+    }
+  }
