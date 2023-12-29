@@ -7,45 +7,47 @@
 p, h1{
     color: var(--Black-main);
 }
-
-.containerAbout{
+.containerAbout {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    max-width: 769px;
+    margin: 0 auto;
+    padding: 20px;
     justify-content: center;
-    margin-top: 60px;
 }
 
-.content_aboutme{
-    margin-right: 350px;
+.content_aboutme {
+    order: 2;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px; 
 }
 
-.mepick{
+.mepick {
+    
     max-width: 300px;
-    /* margin-left: 6rem; */
-    border-radius: 12% / 30px 30px;
-
+    order: 3;
+    margin-bottom: 20px;
+    /* border-radius: 12% / 30px; */
+    border-bottom-left-radius:  30px;
+    border-bottom-right-radius:  30px;
 }
 
 .p_about{
     width: 500px;
     height: 200px;
     text-align: justify;
-    /* float: right; */
-    /* margin-right: 6rem; */
     font-size: 1.3rem;
     margin-top: 60px;
  }
 
- .icon_skills{
-    
-    width: 500px;
-    height: 200px;
-    align-items: center;
-    margin-top: 1.5rem;
-    
-   
+ .icon_skills {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-
 
 .icon_skills img{
     max-width: 55px;
@@ -57,10 +59,11 @@ p, h1{
    transform: scale(1.5);   
 }
 
-.skills{
+.skills {
+    order: 1;
     text-align: justify;
-    float: right;
-
+    margin-top: 20px; 
+    margin-top: 240px;
 }
 
 .skills h1{
@@ -92,6 +95,12 @@ span{
     transform: translateY(0);
   }
 
+  .mainskills {
+    order: 4;
+    text-align: center;
+    margin-top: 600px;
+    
+}
   
 
   @media only screen and (max-width: 1200px){
@@ -109,19 +118,29 @@ span{
         order: 2;
         text-align: center;
         margin: 0 auto;
+        margin-top: 20px; 
     }
     
     .skills {
         order: 1;
         text-align: justify;
         
+        margin-top: 350px;
     }
     
     .p_about {
-        margin-bottom: 200px;
+        width: 70%;
+        height: 200px;
+        text-align: justify;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        margin-top: 60px;
+        margin-bottom: 150px;
+        
     }
     
     .mepick {
+        
         max-width: 200px;
         order: 3;
         margin-bottom: 20px;
@@ -130,7 +149,8 @@ span{
     .mainskills {
         order: 4;
         text-align: center;
-        margin: 0;
+        margin-top: 600px;
+        
     }
     
     .icon_skills {

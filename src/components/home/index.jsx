@@ -1,11 +1,13 @@
 import React from "react";
 
 import image1 from "../img/image1.svg";
+import imagemResponsiva from "../img/image1_responsiva.svg";
+
 
 import "./styles.css";
 
 export default function Home() {
- 
+  const isMobile = window.innerWidth <= 1200;
 
   return (
 
@@ -18,7 +20,7 @@ export default function Home() {
           </div>
 
           <div className="image_home">
-            <img src={image1} alt="image1" />
+             <img src={isMobile ? imagemResponsiva : image1} alt="imagem de fundo" />
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function Services() {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 1300) {
       setIsVisible(true);
     }else{
         setIsVisible(false);
