@@ -14,11 +14,11 @@ p, h1{
 
 
 .containerContact{
-    margin-top: 190px;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
 }
 
 .icon_contacts{
@@ -58,19 +58,20 @@ p, h1{
 
   @media only screen and (max-width: 1200px){
     .containerContact{
-        margin-top: 190px;
+        /* margin-top: 190px; */
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
     
     .icon_contacts{
+        margin: 0;
         display: flex;
         gap: 25px
     }
 
     .icon_contacts img{
-        max-width: 90px;
+        max-width: 70px;
     }
   }

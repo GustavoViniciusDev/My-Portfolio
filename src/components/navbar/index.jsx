@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink, animateScroll } from "react-scroll";
 
 import "./styles.css";
 
@@ -11,9 +11,9 @@ export default function Navbar() {
     setActiveTab(tab);
   };
 
-  // const scrollToTop = () => {
-  //   scroll.scrollToTop();
-  // };
+  const scrollToTop = () => {
+    animateScroll.scrollToTop(); 
+  };
 
 
   return (
@@ -38,6 +38,8 @@ export default function Navbar() {
           <ScrollLink to="contact" smooth onClick={() => handleTabClick("contact")}>
             CONTACT
           </ScrollLink>
+        </li>
+        <li className="nav_item" onClick={scrollToTop}> 
         </li>
       </ul>
     </div>
