@@ -40,7 +40,7 @@ export default function About() {
 
           <div className="skills">
             <p className="p_about">
-              Hello, my name is Gustavo, I'm 22 years old, and I am a web developer and programming teacher. I have expertise in some of the most prevalent programming languages on the internet, such as PHP, HTML, CSS, and JavaScript. Additionally, I have knowledge in frameworks and libs like Laravel, Node.js and React.js, as well as both relational and non-relational databases. Currently, I reside in Paraná, Brazil.
+              Hello, my name is Gustavo and i'm 22 years old and I am a web developer and programming teacher. I have expertise in some of the most prevalent programming languages on the internet such as PHP, HTML, CSS, and JavaScript. Additionally, I have knowledge in frameworks and libs like Laravel, Node.js and React.js as well as both relational and non-relational databases. I currently live in Paraná, Brazil.
             </p>
 
             <h1 className="mainskills"><span>MAIN</span> SKILLS</h1>

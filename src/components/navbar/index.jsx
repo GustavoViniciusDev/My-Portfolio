@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 import "./styles.css";
 
@@ -11,9 +11,9 @@ export default function Navbar() {
     setActiveTab(tab);
   };
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+  // const scrollToTop = () => {
+  //   scroll.scrollToTop();
+  // };
 
 
   return (
