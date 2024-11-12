@@ -8,7 +8,6 @@ import { ExternalLink, User } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { MouseEvent } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ModeToggle } from "./theme-button"
@@ -29,14 +28,6 @@ interface Testimonial {
 
 
 export default function Component() {
-
-  const handleDownload = (e: MouseEvent) => {
-    e.preventDefault();
-    const link = document.createElement('a');
-    link.href = '/portfolio.pdf'; 
-    link.download = 'Portfolio_Gustavo.pdf'; 
-    link.click();
-  };
 
   const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text)
@@ -135,9 +126,7 @@ export default function Component() {
               </Link>
             </div>
             <ModeToggle />
-            <Button size="sm" variant="outline" className="hidden md:inline-flex" onClick={handleDownload}>
-              Download CV
-            </Button>
+           
           </div>
         </nav>
       </header>
