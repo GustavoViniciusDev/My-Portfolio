@@ -4,10 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Copy, Github, Instagram, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { ExternalLink, User } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ModeToggle } from "./theme-button"
@@ -19,13 +18,6 @@ interface ExperienceItem {
   period: string
   responsibilities: string[]
 }
-
-interface Testimonial {
-  quote: string
-  author: string
-  role: string
-}
-
 
 export default function Component() {
 
@@ -85,24 +77,6 @@ export default function Component() {
   ]
 
 
-  const testimonials: Testimonial[] = [
-    {
-      quote: "A great developer with good qualifications and very committed to the job.",
-      author: "André T.",
-      role: "CTO - Iceberg Security"
-    },
-    {
-      quote: "Great guy, highly recommended for any COMPLEX back-end development job! His skills are top-notch and he will be an amazing addition to any team.",
-      author: "Felipe Bomfim",
-      role: "Sr. Full Stack - Link Monitoramento"
-    },
-    {
-      quote: "Gustavo was extremely easy and pleasant to work with and truly cares about the success of the project. Ele has a high level of knowledge and was able to work on my application using Laravel without any problems.",
-      author: "Cristiane Brito",
-      role: "Freelancer"
-    }
-  ]
-
   return (
     <div className="min-h-screen bg-background px-10">
       <header className="container px-4 py-4">
@@ -117,9 +91,6 @@ export default function Component() {
               </Link>
               <Link href="#work" className="text-sm hover:text-primary">
                 Work
-              </Link>
-              <Link href="#testimonials" className="text-sm hover:text-primary">
-                Testimonials
               </Link>
               <Link href="#getintouch" className="text-sm hover:text-primary">
                 Contact
@@ -389,41 +360,6 @@ export default function Component() {
         </div>
 
         {/* Testimonials */}
-        <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto space-y-4">
-            <div className="text-center space-y-2">
-              <div id="testimonials" className="text-center mb-8">
-                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Testimonials</span>
-              </div>
-              <p className="text-lg text-muted-foreground">
-                Nice things people have said about me:
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-              {testimonials.map((testimonial, index) => (
-                <Card key={index} className="border-0 bg-card">
-                  <CardContent className="p-6 space-y-4">
-                    <Avatar className="h-12 w-12 bg-muted">
-                      <AvatarFallback>
-                        <User className="h-6 w-6" />
-                      </AvatarFallback>
-                    </Avatar>
-                    <blockquote className="text-sm leading-relaxed">
-                      &quot;{testimonial.quote}&quot;
-                    </blockquote>
-                    <footer className="space-y-1">
-                      <div className="font-medium">{testimonial.author}</div>
-                      <div className="text-sm text-muted-foreground">
-                        {testimonial.role}
-                      </div>
-                    </footer>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
       </main>
 
       {/* Footer */}
