@@ -4,12 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Copy, Github, Instagram, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { ExternalLink } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card } from "@/components/ui/card"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ModeToggle } from "./theme-button"
+import WorkSection from './components/works';
 
 interface ExperienceItem {
   company: string
@@ -23,7 +22,7 @@ export default function Component() {
 
   const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text)
-      .then(() => toast.success(`Copied: ${text}`)) 
+      .then(() => toast.success(`Copied: ${text}`))
   };
 
   const skills = [
@@ -97,7 +96,7 @@ export default function Component() {
               </Link>
             </div>
             <ModeToggle />
-           
+
           </div>
         </nav>
       </header>
@@ -154,7 +153,7 @@ export default function Component() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://instagram.com/guto.peagape"
                 target="_blank"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
@@ -306,59 +305,8 @@ export default function Component() {
 
         {/* Work */}
 
-        <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl space-y-8">
-            <div className="text-center space-y-2">
-              <div id="work" className="text-center mb-8">
-                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Work</span>
-              </div>
-              <p className="text-lg text-muted-foreground">
-                Some of the noteworthy projects I have built:
-              </p>
-            </div>
-            <div className="grid gap-8">
-              <Card className="overflow-hidden border-none bg-gradient-to-t from-gray-100 to-white p-0.5 dark:from-gray-900 dark:to-gray-800">
-                <CardContent className="grid gap-4 p-6 md:grid-cols-2 md:gap-8">
-                  <div className="overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
-                    <Image
-                      src="/img/sweetpricer.png"
-                      alt="Fiskil project screenshot"
-                      width={800}
-                      height={400}
-                      className="aspect-[1.6] h-auto w-full object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col justify-center space-y-4">
-                    <h3 className="text-2xl font-bold">SweetPricer</h3>
-                    <p className="text-muted-foreground">
-                      SweetPricer is a micro-SaaS solution designed to help small and medium-sized businesses set prices accurately and keep efficient control of their products.
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary">React</Badge>
-                      <Badge variant="secondary">Next.js</Badge>
-                      <Badge variant="secondary">TypeScript</Badge>
-                      <Badge variant="secondary">MySql</Badge>
-                      <Badge variant="secondary">Tailwindcss</Badge>
-                      <Badge variant="secondary">Figma</Badge>
-                      <Badge variant="secondary">Stripe</Badge>
-                      <Badge variant="secondary">Git</Badge>
-                    </div>
-                    <a
-                      href="https://www.sweetpricer.com.br/"
-                      className="inline-flex w-fit items-center gap-2 text-sm font-medium text-foreground hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      <span>View Project</span>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-
+        <WorkSection />
+        
         {/* Testimonials */}
       </main>
 
