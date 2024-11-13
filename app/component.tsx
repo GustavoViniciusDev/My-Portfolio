@@ -9,6 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ModeToggle } from "./theme-button"
 import WorkSection from './components/works';
+import { FaWhatsapp } from "react-icons/fa";
 
 interface ExperienceItem {
   company: string
@@ -24,6 +25,13 @@ export default function Component() {
     navigator.clipboard.writeText(text)
       .then(() => toast.success(`Copied: ${text}`))
   };
+
+  const handleWhatsappClick = () => {
+    const message = "Olá! Tenho interesse na criação de um site.";
+    const phoneNumber = "5541997959684";
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+};
 
   const skills = [
     { name: "Javascript", icon: "/img/js.png" },
@@ -341,8 +349,15 @@ export default function Component() {
                   size="icon"
                   onClick={() => handleCopy("+41 9 9795-9684")}
                 >
-                  <Copy className="h-4 w-4" />
+                  <Copy className="h-4 w-4" />  
                   <span className="sr-only">Copiar Número</span>
+                </Button>
+                <Button 
+                  variant="ghost"
+                  size="icon"
+                  onClick={handleWhatsappClick}
+                >
+                  <FaWhatsapp className="h-4 w-2" />
                 </Button>
               </div>
             </div>
