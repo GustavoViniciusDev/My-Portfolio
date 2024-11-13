@@ -14,10 +14,10 @@ export default function WorkSection() {
             <div className="mx-auto max-w-6xl space-y-8">
                 <div className="text-center space-y-2">
                     <div id="work" className="text-center mb-8">
-                        <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Work</span>
+                        <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Trabalhos</span>
                     </div>
                     <p className="text-lg text-muted-foreground">
-                        Some of the noteworthy projects I have built:
+                        Aqui estão alguns dos projetos mais recentes que desenvolvi:
                     </p>
                 </div>
                 <div className="grid gap-8">
@@ -81,7 +81,7 @@ export default function WorkSection() {
                             <div className="flex flex-col justify-center space-y-4">
                                 <h3 className="text-2xl font-bold">SweetPricer</h3>
                                 <p className="text-muted-foreground">
-                                    SweetPricer is a micro-SaaS solution designed to help small and medium-sized businesses set prices accurately and keep efficient control of their products.
+                                A SweetPricer é uma solução micro-SaaS concebida para ajudar as pequenas e médias empresas a definir preços com precisão e a manter um controlo eficiente dos seus produtos.
                                 </p>
                                 <div className="flex flex-wrap gap-2">
                                     <Badge variant="secondary">React</Badge>
@@ -100,7 +100,7 @@ export default function WorkSection() {
                                     rel="noopener noreferrer"
                                 >
                                     <ExternalLink className="h-4 w-4" />
-                                    <span>View Project</span>
+                                    <span>Ver Projeto</span>
                                 </a>
                             </div>
                         </CardContent>
@@ -114,7 +114,7 @@ export default function WorkSection() {
                         <div className="flex flex-col justify-center space-y-4">
                                 <h3 className="text-2xl font-bold">Tourbinou</h3>
                                 <p className="text-muted-foreground">
-                                    This system was designed to register and record travel destinations and tours, using API to search for states and cities, and to record tours where images can be saved along with the tour data.
+                                     Este sistema foi criado para registar e gravar destinos de viagem e passeios, utilizando a API para pesquisar estados e cidades, e para gravar passeios onde as imagens podem ser guardadas juntamente com os dados do passeio.
                                 </p>
                                 <div className="flex flex-wrap gap-2">
                                     <Badge variant="secondary">Vue.js</Badge>
@@ -134,7 +134,7 @@ export default function WorkSection() {
                                     rel="noopener noreferrer"
                                 >
                                     <ExternalLink className="h-4 w-4" />
-                                    <span>View Project</span>
+                                    <span>Ver Projeto</span>
                                 </a>
                             </div>
                             <div className="overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">

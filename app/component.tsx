@@ -43,34 +43,34 @@ export default function Component() {
     {
       company: "Iceberg Security",
       logo: "/img/icebergsecurity.png",
-      position: "Fullstack Developer",
+      position: "Desenvolvedor Fullstack",
       period: "Jan 2024 - Out 2024",
-      responsibilities: [
-        "Developed and maintained internal systems and SaaS using PHP, Laravel, React, and Node.js.",
-        "Integrated REST and RESTful APIs to improve data flow across different platforms.",
-        "Managed development environments with Docker and AWS.",
+      responsibilities: [        
+      "Desenvolveu e manteve sistemas internos e SaaS utilizando PHP, Laravel, React e Node.js.",
+      "APIs REST e RESTful integradas para melhorar o fluxo de dados em diferentes plataformas.",
+      "Gestão de ambientes de desenvolvimento com Docker e AWS.",
       ],
     },
     {
       company: "Link Monitoramento",
       logo: "/img/linkmonitoramento.jpg",
-      position: "Fullstack Developer",
-      period: "Nov 2022 - July 2023",
+      position: "Desenvolvedor Fullstack",
+      period: "Nov 2022 - Jul 2023",
       responsibilities: [
-        "Participated in the development of real-time monitoring systems using Laravel.js, MySQL, React, and Node.js.",
-        "Implemented backend improvements with PHP and Laravel to optimize system performance.",
-        "Collaborated with development and project management teams using Git and GitHub.",
+      "Participou no desenvolvimento de sistemas de monitorização em tempo real utilizando Laravel.js, MySQL, React e Node.js.",
+      "Implementou melhorias de backend com PHP e Laravel para otimizar o desempenho do sistema.",
+      "Colaborou com equipas de desenvolvimento e gestão de projectos usando Git e GitHub.",
       ],
     },
     {
       company: "Senai",
       logo: "/img/senai-logo.png",
-      position: "Instructor and Developer",
-      period: "May 2022 - Feb 2024",
+      position: "Instrutor e Desenvolvedor",
+      period: "Mai 2022 - Fev 2024",
       responsibilities: [
-        "Taught system development courses focused on PHP, Laravel, React, and SQL databases.",
-        "Guided students in practical projects, helping them apply programming concepts and industry best practices.",
-        "Developed educational materials and organized technical training events.",
+        "Ministrou cursos de desenvolvimento de sistemas focados em PHP, Laravel, React e bases de dados SQL.",
+        "Orientou os alunos em projectos práticos, ajudando-os a aplicar conceitos de programação e as melhores práticas da indústria.",
+        "Desenvolveu materiais didácticos e organizou eventos de formação técnica.",
       ],
     },
   ]
@@ -86,13 +86,13 @@ export default function Component() {
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-6">
               <Link href="#about-me" className="text-sm hover:text-primary">
-                About
+                Sobre
               </Link>
               <Link href="#work" className="text-sm hover:text-primary">
-                Work
+                Trabalhos
               </Link>
               <Link href="#getintouch" className="text-sm hover:text-primary">
-                Contact
+                Contato
               </Link>
             </div>
             <ModeToggle />
@@ -105,15 +105,13 @@ export default function Component() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-                Hi, I&apos;m Gustavo{" "}
+                Olá, Eu sou o Gustavo{" "}
                 <span role="img" aria-label="waving hand">
                   👋
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground">
-                I&apos;m a full-stack developer with a focus on creating (and occasionally designing) exceptional digital experiences
-                that are fast, accessible, visually appealing and responsive. Although I&apos;ve been creating web applications for over
-                3 years, I still enjoy it as if it were something new.
+              Sou um programador full-stack com foco na criação (e ocasionalmente no design) de experiências digitais excepcionais que sejam rápidas, acessíveis, visualmente apelativas e responsivas. Embora já crie aplicações web há mais de 3 anos, continuo a gostar de o fazer como se fosse algo novo.
               </p>
             </div>
             <div className="space-y-4">
@@ -133,14 +131,14 @@ export default function Component() {
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                Paraná, Brazil
+                Paraná, Brasil
               </div>
               <div className="flex items-center gap-2 text-emerald-500">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
                 </span>
-                Available for new projects
+                Disponível para novos projectos
               </div>
             </div>
             <div className="flex gap-4">
@@ -171,7 +169,7 @@ export default function Component() {
 
         <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
           <div id="about-me" className="text-center mb-8">
-            <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">About me</span>
+            <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Sobre mim</span>
           </div>
 
           <div className="grid lg:grid-cols-2 items-center gap-12 justify-center">
@@ -194,27 +192,27 @@ export default function Component() {
             <div className="text-muted-foreground">
               <div className="text-lg leading-relaxed space-y-4">
                 <p>
-                  I&apos;m a passionate developer specializing in full-stack development (React.js & Laravel). I&apos;m highly enthusiastic about bringing both the technical and visual aspects of digital products to life. User experience, flawless design, and writing clean, readable, high-performance code are essential to me.
+                Sou um programador apaixonado por desenvolvimento full-stack, com foco em React.js e Laravel. Gosto de transformar ideias em produtos digitais, cuidando tanto dos detalhes técnicos quanto da aparência visual. Para mim, é essencial criar experiências que sejam intuitivas e de alta qualidade, com um design bem feito e um código limpo e eficiente.
                 </p>
                 <p>
-                  My journey as a web developer began in 2021, and since then, I have continuously evolved, embracing new challenges and learning the latest technologies. Now, I&apos;m building cutting-edge web applications using modern tools like Next.js, TypeScript, Laravel, Tailwind CSS, Supabase, and more.
+                Comecei minha jornada como programador web em 2021 e, desde então, tenho crescido constantemente, enfrentando novos desafios e me atualizando com as tecnologias mais recentes. Hoje, desenvolvo aplicações web modernas usando ferramentas como Next.js, TypeScript, Laravel, Tailwind CSS, MySql, entre outras.
                 </p>
                 <p>
-                  With a progressive mindset, I enjoy working on all stages of a product, from concept to final development.
+                Gosto de acompanhar todas as etapas de um produto, desde a ideia inicial até o desenvolvimento final, sempre com uma mentalidade focada em evolução e melhoria.
                 </p>
                 <p>
-                  When I&apos;m not in full development mode, you can find me on LinkedIn and Instagram. On LinkedIn, I share ideas about technology and build my journey publicly. Alternatively, you can follow my work on GitHub.
+                Quando não estou mergulhado no desenvolvimento, você pode me encontrar no LinkedIn e no Instagram. No LinkedIn, compartilho ideias sobre tecnologia e divido meu caminho na área. Se preferir, pode acompanhar meus projetos também no GitHub.
                 </p>
 
-                <p>Finally, some quick bits about me:</p>
+                <p>Por fim, algumas informações rápidas sobre mim:</p>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Systems Development Technician</li>
-                  <li>Avid learner</li>
-                  <li>Full-time freelancer</li>
-                  <li>Aspiring indie hacker</li>
+                  <li>Formação Técnica em Desenvolvimento de Sistemas</li>
+                  <li>Aprendiz ávido</li>
+                  <li>Freelancer em tempo integral</li>
+                  <li>Aspirante a empreendedor</li>
                 </ul>
                 <p>
-                  One last thing, I&apos;m available for freelance work, so feel free to reach out and say hello! 😉
+                Por último, estou disponível para trabalhar como freelancer, por isso, sinta-se à vontade para me contactar e dizer olá! 😉
                 </p>
               </div>
             </div>
@@ -223,11 +221,11 @@ export default function Component() {
         {/* Skills */}
         <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
           <div id="about-me" className="text-center">
-            <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Skills</span>
+            <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Habilidades</span>
           </div>
           <div className="text-center">
             <h2 className="mt-4 text-2xl font-medium mb-10">
-              The skills, tools and technologies I am really good at:
+              As competências, ferramentas e tecnologias em que sou realmente bom:
             </h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
@@ -257,10 +255,10 @@ export default function Component() {
           <div className="max-w-3xl mx-auto p-4 space-y-8">
             <div className="text-center space-y-2">
               <div id="about-me" className="text-center mb-8">
-                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Experience</span>
+                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Experiência</span>
               </div>
               <p className="text-lg text-muted-foreground">
-                Here is a quick summary of my most recent experiences:
+                Aqui um breve resumo das minhas experiências
               </p>
             </div>
 
@@ -316,10 +314,10 @@ export default function Component() {
           <div className="flex flex-col items-center text-center space-y-8">
             <div className="space-y-2">
               <div id="getintouch" className="text-center mb-8">
-                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Get in touch</span>
+                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Entrar em contato</span>
               </div>
               <p className="text-lg text-muted-foreground">
-                What&apos;s next? Feel free to reach out to me if you&apos;re looking for a developer, have a query, or simply want to connect.
+              Se precisar de um programador, tiver alguma dúvida ou apenas quiser conversar, estou à disposição!
               </p>
             </div>
 
@@ -332,7 +330,7 @@ export default function Component() {
                   onClick={() => handleCopy("gustavo.vinicius.caes@gmail.com")}
                 >
                   <Copy className="h-4 w-4" />
-                  <span className="sr-only">Copy email</span>
+                  <span className="sr-only">Copiar email</span>
                 </Button>
               </div>
 
@@ -344,14 +342,14 @@ export default function Component() {
                   onClick={() => handleCopy("+41 9 9795-9684")}
                 >
                   <Copy className="h-4 w-4" />
-                  <span className="sr-only">Copy phone number</span>
+                  <span className="sr-only">Copiar Número</span>
                 </Button>
               </div>
             </div>
 
             <div className="space-y-2">
               <p className="text-muted-foreground">
-                You may also find me on these platforms!
+               Você também pode me encontrar nessas plataformas!
               </p>
               <div className="flex justify-center gap-4">
                 <Button variant="ghost" size="icon" asChild>
@@ -373,8 +371,7 @@ export default function Component() {
             </div>
 
             <div className="text-sm text-muted-foreground">
-              © 2024 | Designed and coded with{" "}
-              <span className="text-red-500">❤</span> by Gustavo Vinicius
+              © 2024 | Criado e codificado por Gustavo Vinicius
             </div>
           </div>
         </div>
