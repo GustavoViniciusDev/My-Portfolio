@@ -49,12 +49,22 @@ export default function Component() {
   ]
   const experiences: ExperienceItem[] = [
     {
+      company: "Solis",
+      logo: "/img/logo-solis.png",
+      position: "Desenvolvedor Back-end",
+      period: "Dez 2024 - Atualmente",
+      responsibilities :[
+        "Desenvolver, manter e documentar o Solis, um ecossistema inovador projetado para aprimorar a educação pública em escolas brasileiras.",
+        "Auxiliar na tomada de decisões, identificando as melhores práticas e métodos para o desenvolvimento eficiente de novas funcionalidades.",
+      ],
+    },
+    {
       company: "Iceberg Security",
       logo: "/img/icebergsecurity.png",
       position: "Desenvolvedor Fullstack",
       period: "Jan 2024 - Out 2024",
       responsibilities: [        
-      "Desenvolveu e manteve sistemas internos e SaaS utilizando PHP, Laravel, React e Node.js.",
+      "Desenvolver e manter sistemas internos e SaaS utilizando PHP, Laravel, React e Node.js.",
       "APIs REST e RESTful integradas para melhorar o fluxo de dados em diferentes plataformas.",
       "Gestão de ambientes de desenvolvimento com Docker e AWS.",
       ],
