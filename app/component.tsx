@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Copy, Github, Instagram, Linkedin } from "lucide-react"
+import { Copy, Github, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Card } from "@/components/ui/card"
@@ -13,7 +13,6 @@ import { FaWhatsapp } from "react-icons/fa";
 
 interface ExperienceItem {
   company: string
-  logo: string
   position: string
   period: string
   responsibilities: string[]
@@ -46,57 +45,74 @@ export default function Component() {
     { name: "Tailwindcss", icon: "/img/TailwindCSS.png" },
     { name: "Figma", icon: "/img/Figma.png" },
     { name: "Git", icon: "/img/Git.png" },
+    { name: "Bootstrap", icon: "/img/Bootstrap.png" },
+    { name: "Docker", icon: "/img/Docker.png" },
+    { name: "Linux", icon: "/img/Linux.PNG" },
+    { name: "MongoDB", icon: "/img/MongoDb.png" },
+    { name: "Vite", icon: "/img/Vite.png" },
+    { name: "VueJs", icon: "/img/Vuejs.png" },
+    { name: "WooCommerce", icon: "/img/WooCommerce.png" },
+    { name: "Wordpress", icon: "/img/wordpress.png" },
   ]
   const experiences: ExperienceItem[] = [
     {
-      company: "Solis",
-      logo: "/img/logo-solis.png",
-      position: "Desenvolvedor Back-end",
-      period: "Dez 2024 - Atualmente",
-      responsibilities :[
-        "Desenvolver, manter e documentar o Solis, um ecossistema inovador projetado para aprimorar a educação pública em escolas brasileiras.",
-        "Auxiliar na tomada de decisões, identificando as melhores práticas e métodos para o desenvolvimento eficiente de novas funcionalidades.",
+      company: "Solis Educacional",
+      position: "Desenvolvedor Fullstack",
+      period: "Nov 2024 - Julho 2025",
+      responsibilities: [
+        "Desenvolvimento e manutenção de funcionalidades em sistema legado com Laravel e MySQL.",
+        "Melhoria de performance com técnicas de cache, refatoração e controle de injeções SQL.",
+        "Documentação técnica e aplicação de boas práticas de código em colaboração com o time.",
+      ],
+    },
+    {
+      company: "PowerLibs",
+      position: "Desenvolvedor Fullstack",
+      period: "Mai 2024 - Jun 2025",
+      responsibilities: [
+        "Atuação como referência técnica em decisões de arquitetura e escolha de tecnologias.",
+        "Desenvolvimento de sistemas robustos com foco em escalabilidade e manutenção a longo prazo.",
+        "Participação ativa no processo seletivo e onboarding de novos desenvolvedores.",
+        "Colaboração em equipe ágil com foco em entrega contínua e revisão de código.",
       ],
     },
     {
       company: "Iceberg Security",
-      logo: "/img/icebergsecurity.png",
       position: "Desenvolvedor Fullstack",
       period: "Jan 2024 - Out 2024",
-      responsibilities: [        
-      "Desenvolver e manter sistemas internos e SaaS utilizando PHP, Laravel, React e Node.js.",
-      "APIs REST e RESTful integradas para melhorar o fluxo de dados em diferentes plataformas.",
-      "Gestão de ambientes de desenvolvimento com Docker e AWS.",
+      responsibilities: [
+        "Desenvolvimento de aplicações web seguras utilizando Laravel, React e Node.js.",
+        "Integração de APIs RESTful para comunicação eficiente entre sistemas.",
+        "Gerenciamento de ambientes Docker e infraestrutura em nuvem com AWS.",
       ],
     },
     {
       company: "Link Monitoramento",
-      logo: "/img/linkmonitoramento.jpg",
       position: "Desenvolvedor Fullstack",
       period: "Nov 2022 - Jul 2023",
       responsibilities: [
-      "Participou no desenvolvimento de sistemas de monitorização em tempo real utilizando Laravel.js, MySQL, React e Node.js.",
-      "Implementou melhorias de backend com PHP e Laravel para otimizar o desempenho do sistema.",
-      "Colaborou com equipas de desenvolvimento e gestão de projectos usando Git e GitHub.",
+        "Criação e manutenção de sistemas de monitoramento em tempo real com Laravel.js, React e Node.js.",
+        "Otimização de desempenho no backend com PHP e MySQL.",
+        "Colaboração em equipe ágil com versionamento via Git e GitHub.",
       ],
     },
     {
-      company: "Senai",
-      logo: "/img/senai-logo.png",
+      company: "SENAIPR",
       position: "Instrutor e Desenvolvedor",
       period: "Mai 2022 - Fev 2024",
       responsibilities: [
-        "Ministrou cursos de desenvolvimento de sistemas focados em PHP, Laravel, React e bases de dados SQL.",
-        "Orientou os alunos em projectos práticos, ajudando-os a aplicar conceitos de programação e as melhores práticas da indústria.",
-        "Desenvolveu materiais didácticos e organizou eventos de formação técnica.",
+        "Ministração de aulas práticas de PHP, Laravel, React e SQL para turmas técnicas.",
+        "Orientação de projetos reais com foco em boas práticas de desenvolvimento.",
+        "Criação de conteúdos didáticos e eventos de capacitação para novos desenvolvedores.",
       ],
     },
-  ]
+  ];
+
 
 
   return (
-    <div className="min-h-screen bg-background px-10">
-      <header className="container px-4 py-4">
+    <div className="min-h-screen bg-background px-4">
+      <header className="container py-4">
         <nav className="flex items-center justify-between">
           <Link href="/" className="text-xl font-bold">
             &lt;GustavoViniciusDev /&gt;
@@ -118,22 +134,22 @@ export default function Component() {
           </div>
         </nav>
       </header>
-      <main className="container px-4 py-20">
-        <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
+      <main className="container py-20">
+        <div className="w-ful py-8">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+              <h1 className="text-4xl font-bold text-foreground">
                 Olá, Eu sou o Gustavo{" "}
                 <span role="img" aria-label="waving hand">
                   👋
                 </span>
               </h1>
-              <p className="text-lg text-muted-foreground">
-              Sou um programador full-stack com foco na criação (e ocasionalmente no design) de experiências digitais excepcionais que sejam rápidas, acessíveis, visualmente apelativas e responsivas. Embora já crie aplicações web há mais de 3 anos, continuo a gostar de o fazer como se fosse algo novo.
+              <p className="text-lg text-foreground">
+              Sou um desenvolvedor Full-Stack especializado na criação de experiências digitais de alta performance — rápidas, acessíveis, responsivas e visualmente bem trabalhadas. Com mais de 4 anos de experiência prática no desenvolvimento de aplicações web, continuo motivado como se estivesse começando agora. Meu foco é transformar ideias em produtos digitais de qualidade, cuidando de cada detalhe técnico e visual com paixão.
               </p>
             </div>
-            <div className="space-y-4">
-              <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="space-y-4 text-lg text-foreground">
+              <div className="flex items-center gap-2 text-foreground">
                 <svg
                   className=" w-4 h-4"
                   fill="none"
@@ -168,14 +184,6 @@ export default function Component() {
                 <Github className="w-5 h-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link
-                href="https://instagram.com/guto.peagape"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
               <Link href="https://www.linkedin.com/in/gustavoviniciusdev/" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
                 <span className="sr-only">Linkedin</span>
@@ -185,7 +193,7 @@ export default function Component() {
         </div>
         {/* About Me */}
 
-        <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
+        <div className="w-ful py-8">
           <div id="about-me" className="text-center mb-8">
             <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Sobre mim</span>
           </div>
@@ -197,7 +205,7 @@ export default function Component() {
                   alt="Profile photo"
                   className="rounded-2xl object-cover shadow-2xl border-solid border-2"
                   height={500}
-                  src="/img/Minhafoto.jpeg"
+                  src="/img/Minhafoto.jpg"
                   style={{
                     aspectRatio: "300/400",
                     objectFit: "cover",
@@ -207,37 +215,39 @@ export default function Component() {
               </div>
             </div>
 
-            <div className="text-muted-foreground">
+            <div className="text-foreground">
               <div className="text-lg leading-relaxed space-y-4">
                 <p>
-                Sou um programador apaixonado por desenvolvimento full-stack, com foco em React.js e Laravel. Gosto de transformar ideias em produtos digitais, cuidando tanto dos detalhes técnicos quanto da aparência visual. Para mim, é essencial criar experiências que sejam intuitivas e de alta qualidade, com um design bem feito e um código limpo e eficiente.
+                  Sou um desenvolvedor apaixonado por <strong>tecnologia, design e resultados</strong>. Trabalho com tecnologias como <strong>React.js, Next.js, Laravel, TypeScript</strong> e <strong>MySQL</strong>, desenvolvendo soluções modernas para desafios reais.
                 </p>
                 <p>
-                Comecei minha jornada como programador web em 2021 e, desde então, tenho crescido constantemente, enfrentando novos desafios e me atualizando com as tecnologias mais recentes. Hoje, desenvolvo aplicações web modernas usando ferramentas como Next.js, TypeScript, Laravel, Tailwind CSS, MySql, entre outras.
+                  Desde 2021 venho aprimorando minhas habilidades como programador, atuando em empresas, startups e como freelancer. Já participei da criação de <strong>sistemas SaaS, plataformas educacionais, ERPs</strong> e soluções sob medida para controle interno.
                 </p>
                 <p>
-                Gosto de acompanhar todas as etapas de um produto, desde a ideia inicial até o desenvolvimento final, sempre com uma mentalidade focada em evolução e melhoria.
+                  Além do desenvolvimento em si, gosto de atuar em toda a jornada do produto — desde a concepção até a entrega — sempre com foco em melhoria contínua e impacto real para os usuários.
                 </p>
                 <p>
-                Quando não estou mergulhado no desenvolvimento, você pode me encontrar no LinkedIn e no Instagram. No LinkedIn, compartilho ideias sobre tecnologia e divido meu caminho na área. Se preferir, pode acompanhar meus projetos também no GitHub.
+                  Atualmente, aplico meus conhecimentos em projetos com <strong>Laravel no backend</strong>, <strong>React/Next.js no frontend</strong> e uma stack moderna que inclui <strong>Tailwind CSS, Docker, AWS</strong> e integração com <strong>APIs RESTful</strong>.
                 </p>
-
-                <p>Por fim, algumas informações rápidas sobre mim:</p>
+                <p>💡 Alguns fatos rápidos sobre mim:</p>
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Formação Técnica em Desenvolvimento de Sistemas</li>
-                  <li>Aprendiz ávido</li>
-                  <li>Freelancer em tempo integral</li>
-                  <li>Aspirante a empreendedor</li>
+                  <li>🧠 Formação técnica em Desenvolvimento de Sistemas e cursando Engenharia de Software</li>
+                  <li>👨‍🏫 Fui professor de programação (PHP, Laravel, React, SQL) no SENAI</li>
+                  <li>🌐 Atuei em projetos de diferentes portes, incluindo plataformas educacionais públicas</li>
+                  <li>💼 Freelancer em tempo integral</li>
+                  <li>📈 Aspirante a empreendedor digital</li>
                 </ul>
                 <p>
-                Por último, estou disponível para trabalhar como freelancer, por isso, sinta-se à vontade para me contactar e dizer olá! 😉
+                  Estou disponível para colaborar em novos projetos como freelancer. Sinta-se à vontade para me chamar e dizer olá! 😉
                 </p>
               </div>
             </div>
+
+
           </div>
         </div>
         {/* Skills */}
-        <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
+        <div className="w-ful py-8">
           <div id="about-me" className="text-center">
             <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Habilidades</span>
           </div>
@@ -269,13 +279,15 @@ export default function Component() {
         </div>
 
         {/* Experience */}
-        <div className="w-ful px-4 py-8 md:px-6 lg:px-8">
+        <div className="w-full py-8">
           <div className="max-w-3xl mx-auto p-4 space-y-8">
             <div className="text-center space-y-2">
               <div id="about-me" className="text-center mb-8">
-                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Experiência</span>
+                <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">
+                  Experiência
+                </span>
               </div>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-foreground">
                 Aqui um breve resumo das minhas experiências
               </p>
             </div>
@@ -283,41 +295,26 @@ export default function Component() {
             <div className="space-y-6">
               {experiences.map((experience, index) => (
                 <Card key={index} className="p-6">
-                  <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                    <div className="flex-shrink-0">
-                      <Image
-                        src={experience.logo}
-                        alt={experience.company}
-                        className="h-10 w-auto"
-                        width={400}
-                        height={400}
-                      />
+                  <div className="space-y-2">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between">
+                      <h3 className="text-lg font-semibold text-foreground">
+                        {experience.position} —{" "}
+                        <span className="text-primary font-medium">{experience.company}</span>
+                      </h3>
+                      <span className="text-sm text-foreground">{experience.period}</span>
                     </div>
-                    <div className="flex-grow space-y-2">
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-1">
-                        <div>
-                          <h3 className="font-semibold text-lg">
-                            {experience.position}
-                          </h3>
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          {experience.period}
-                        </div>
-                      </div>
-                      <ul className="list-disc ml-4 space-y-1">
-                        {experience.responsibilities.map((item, itemIndex) => (
-                          <li key={itemIndex} className="text-muted-foreground">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    <ul className="list-disc ml-4 space-y-1 text-foreground">
+                      {experience.responsibilities.map((item, itemIndex) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
                   </div>
                 </Card>
               ))}
             </div>
           </div>
         </div>
+
 
         {/* Work */}
 
@@ -327,25 +324,25 @@ export default function Component() {
       </main>
 
       {/* Footer */}
-      <footer className="w-ful bg-background">
-        <div className="container px-4 md:px-6">
+      <footer className="bg-background">
+        <div className="container py-10">
           <div className="flex flex-col items-center text-center space-y-8">
             <div className="space-y-2">
               <div id="getintouch" className="text-center mb-8">
                 <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Entrar em contato</span>
               </div>
-              <p className="text-lg text-muted-foreground">
-              Se precisar de um programador, tiver alguma dúvida ou apenas quiser conversar, estou à disposição!
+              <p className="text-lg text-foreground">
+              Precisa de um desenvolvedor confiável ou quer tirar alguma dúvida? Vamos conversar!
               </p>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-center justify-center gap-2">
-                <span className="text-xl font-medium">gustavo.vinicius.caes@gmail.com</span>
+                <span className="text-xl font-medium">contato.gustavoln@gmail.com</span>
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={() => handleCopy("gustavo.vinicius.caes@gmail.com")}
+                  onClick={() => handleCopy("contato.gustavoln@gmail.com")}
                 >
                   <Copy className="h-4 w-4" />
                   <span className="sr-only">Copiar email</span>
@@ -376,12 +373,7 @@ export default function Component() {
               <p className="text-muted-foreground">
                Você também pode me encontrar nessas plataformas!
               </p>
-              <div className="flex justify-center gap-4">
-                <Button variant="ghost" size="icon" asChild>
-                  <a href="https://www.instagram.com/guto.peagape/" aria-label="Instagram">
-                    <Instagram className="h-5 w-5" />
-                  </a>
-                </Button>
+              <div className="flex justify-center gap-4"> 
                 <Button variant="ghost" size="icon" asChild>
                   <a href="https://www.linkedin.com/in/gustavoviniciusdev/" aria-label="Linkedin">
                     <Linkedin className="h-5 w-5" />
@@ -396,7 +388,7 @@ export default function Component() {
             </div>
 
             <div className="text-sm text-muted-foreground">
-              © 2024 | Criado e codificado por Gustavo Vinicius
+              © 2025 | Criado e codificado por Gustavo Vinicius
             </div>
           </div>
         </div>

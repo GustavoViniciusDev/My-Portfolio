@@ -16,7 +16,7 @@ export default function WorkSection() {
                     <div id="work" className="text-center mb-8">
                         <span className="px-4 py-2 rounded-full bg-slate-800 text-sm text-white inline-block">Trabalhos</span>
                     </div>
-                    <p className="text-lg text-muted-foreground">
+                    <p className="text-lg text-foreground">
                         Aqui estão alguns dos projetos mais recentes que desenvolvi:
                     </p>
                 </div>
@@ -80,7 +80,7 @@ export default function WorkSection() {
                             </div>
                             <div className="flex flex-col justify-center space-y-4">
                                 <h3 className="text-2xl font-bold">SweetPricer</h3>
-                                <p className="text-muted-foreground">
+                                <p className="text-foreground">
                                 A SweetPricer é uma solução micro-SaaS concebida para ajudar as pequenas e médias empresas a definir preços com precisão e a manter um controlo eficiente dos seus produtos.
                                 </p>
                                 <div className="flex flex-wrap gap-2">
@@ -113,7 +113,7 @@ export default function WorkSection() {
                         <CardContent className="grid gap-4 p-6 md:grid-cols-2 md:gap-8">
                         <div className="flex flex-col justify-center space-y-4">
                                 <h3 className="text-2xl font-bold">Tourbinou</h3>
-                                <p className="text-muted-foreground">
+                                <p className="text-foreground">
                                      Este sistema foi criado para registar e gravar destinos de viagem e passeios, utilizando a API para pesquisar estados e cidades, e para gravar passeios onde as imagens podem ser guardadas juntamente com os dados do passeio.
                                 </p>
                                 <div className="flex flex-wrap gap-2">
